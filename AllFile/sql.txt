@@ -1,0 +1,6 @@
+create database mydb;
+
+
+create table users(
+	account int primary key,
+	pass varchar(16));

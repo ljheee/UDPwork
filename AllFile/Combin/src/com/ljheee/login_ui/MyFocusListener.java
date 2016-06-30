@@ -8,7 +8,7 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 /**
- * 缂備焦鈹凾extField婵烇綀顕ф慨鐐烘嚔瀹勬壆绻侀柣鎺炲閸嬶絾绂嶇�ｂ晜顐�
+ * 缂佹┄TextField濞ｈ濮為懢宄扮繁閻掞妇鍋ｆ禍瀣╂
  * @author ljheee
  *
  */
@@ -26,8 +26,7 @@ public class MyFocusListener implements FocusListener {
 	public void focusGained(FocusEvent arg0) {
 		//tf = LoginFrame.textFieldPass;
 		if(jtf==LoginFrameServer.textFieldPass){
-			char ch = '�';
-			LoginFrameServer.textFieldPass.setEchoChar(ch);
+			LoginFrameServer.textFieldPass.setEchoChar('�');
 		}
 		String temp = jtf.getText().trim();
 		if(temp.equals(info)){
